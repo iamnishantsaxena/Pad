@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Pad UI</title>
+</head>
+<body>
+
+    <div class="notepad-container">
+        <div class="toolbar">
+            <button id="openBtn">Open</button>
+
+            <button id="saveBtn">Save</button>
+            <button id="saveAsBtn">Save As</button>
+            <button id="clearBtn">Clear</button>
+
+            <!-- 
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="searchBtn">Search</button>
+            <button id="replaceBtn">Replace</button>
+            -->
+
+            <select id="syntaxSelect">
+                <option value="none">Plain Text</option>
+                <option value="html">HTML</option>
+                <!-- Add more syntax options as needed -->
+            </select>
+            <!-- Add a new button for Word Count -->
+            
+            <!-- Add a new button for Print -->
+            <button id="printBtn"><i class='bx bxs-printer'></i></button>
+            <button id="darkModeToggle"><i class='bx bxs-bulb'></i></button>
+            <div id="wordCountDisplay">Words: 0</div>
+        </div>
+        <div class="editor">
+            <div class="line-numbers" id="lineNumbers"></div>
+            <textarea id="notepad" placeholder="Start typing..."></textarea>
+            <div class="panel" id="panel"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
